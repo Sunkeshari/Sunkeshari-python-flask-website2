@@ -6,42 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/static/download.jpeg"">
   <title>Job Careers!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
-    h1{
-  font-size: 40px;
-  font-family: Roboto;
-  font font-weight:normal;
-  color: rgb(10,100,100);
-  text-align:center;
-  }
-   #banner{
-     width:100%;
-     height:360px;
-     object-fit:cover;
-   }
-    h2{
-      font-family: Roboto;
-      font size:32px ; 
-      color: rgb(100,100,100);
-      text-align: center;
-      font-weight: normal;
-    }
-    .bodytext{
-      font-family: Roboto;
-      color: rgb(10,100,100);
-    }
-    #container{
-      max-width:720px;
-      margin:0 auto 0 auto;
+    #banner{
+      height:360px;
+      object-fit:cover;
+      width:100%;
     }
   </style>
 </head>
 <body>
-  <div id="container">
-    <h1> lets Search Job!</h1>
-    <img id="banner"src="static/job.jpg" alt="cities">
-    <h2>About Job careers!</h2>
-    <p class:"bodytext"> Hello there! You are learning how to build job openings website here.
+  <div class="container">
+    <h1 class="text-center mt-4 mb-4" > Let's Search Job!</h1>
+    <img class="img-fluid" id="banner"src="static/job.jpg" alt="cities">
+    <h2 class="text-center mt-2 mb-4">About Job careers!</h2>
+    <p class="lead"> Hello there! You are learning how to build job openings website here.
       If Monty Python is too childish for you, here is another cool alternative to Lorem Ipsum: Nietzsche Ipsum. 
       The German philosopher from 1800s is still very relevant today.
 
@@ -50,13 +29,13 @@
 
 
 
-    <h2>Open positions!</h2>
-    <p class:"bodytext">
+    <h2 class="text-center mt-2 mb-4">Open positions!</h2>
+    <p>
       TODO_Show the Jobs here!
     </p>
-    <div style="text-align:center;"">
-      <button> Contact Us</button>
-      <p> Copyright 2024, @Sunkeshari</p>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg"> Contact Us</button>
+      <p class=" mt-4"> Copyright 2024, @Sunkeshari</p>
     </div>
   </div>
   
