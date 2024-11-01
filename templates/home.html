@@ -17,7 +17,7 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="text-center mt-4 mb-4" > Let's Search Job!</h1>
+    <h1 class="text-center mt-4 mb-4" > {{ company_name }}'s Let's Search Job!</h1>
     <img class="img-fluid" id="banner"src="static/job.jpg" alt="cities">
     <h2 class="text-center mt-2 mb-4">About Job careers!</h2>
     <p class="lead"> Hello there! You are learning how to build job openings website here.
@@ -31,7 +31,10 @@
 
     <h2 class="text-center mt-2 mb-4">Open positions!</h2>
     <p>
-      TODO_Show the Jobs here!
+      {% for job in jobs %}
+      {% include 'jobiem.html'%}
+      {%endfor%}
+      <!-- {{ jobs }} -->
     </p>
     <div class="text-center">
       <button class="btn btn-primary btn-lg"> Contact Us</button>
